@@ -6,7 +6,7 @@ Esta versión soporta únicamente la nueva modalidad "OFFLINE" del SRI.
 
 
 [![Build Status](https://api.travis-ci.org/joselo/cesri.svg?branch=master)](http://travis-ci.org/joselo/cesri)
-
+[![Code Climate](https://codeclimate.com/github/joselo/cesri.svg)](https://codeclimate.com/github/joselo/cesri)
 
 ## Instalación
 
