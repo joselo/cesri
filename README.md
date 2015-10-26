@@ -51,8 +51,8 @@ Cesri::AutorizacionComprobanteService
 ### Recepción de comprobantes
 
 ```ruby
-recepcion = Cesri::RecepcionComprobanteService.validar(xml_plano_firmado)
-=> true
+servicio = Cesri::RecepcionComprobanteService.new
+recepcion = servicio.validar(xml_plano_firmado)
 ```
 
 ```ruby
@@ -90,7 +90,8 @@ ERROR
 ### Autorización de comprobantes
 
 ```ruby
-autorizacion = Cesri::AutorizacionComprobanteService.autorizar(clave_de_acceso)
+servicio = Cesri::AutorizacionComprobanteService.new
+autorizacion = servicio.autorizar(clave_de_acceso)
 ```
 
 ```ruby
