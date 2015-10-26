@@ -4,6 +4,10 @@ Cesri es una Gema Ruby que permite consumir los servicios Web de Comprobantes El
 
 Esta versión soporta únicamente la nueva modalidad "OFFLINE" del SRI.
 
+
+[![Build Status](https://api.travis-ci.org/joselo/cesri.svg?branch=master)](http://travis-ci.org/joselo/cesri)
+
+
 ## Instalación
 
 Agregar esta linea al archivo Gemfile de la aplicación:
