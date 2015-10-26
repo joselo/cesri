@@ -1,0 +1,26 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:validarComprobanteResponse xmlns:ns2="http://ec.gob.sri.ws.recepcion">
+      <RespuestaRecepcionComprobante>
+        <estado>DEVUELTA</estado>
+        <comprobantes>
+          <comprobante>
+            <claveAcceso>2410201107179214673900110020010000000011234567815</claveAcceso>
+            <mensajes>
+              <mensaje>
+                <identificador>45</identificador>
+                <mensaje>ERROR SECUENCIAL REGISTRADO</mensaje>
+                <tipo>ERROR</tipo>
+              </mensaje>
+              <mensaje>
+                <identificador>46</identificador>
+                <mensaje>ERROR TEST</mensaje>
+                <tipo>ERROR</tipo>
+              </mensaje>
+            </mensajes>
+          </comprobante>
+        </comprobantes>
+      </RespuestaRecepcionComprobante>
+    </ns2:validarComprobanteResponse>
+  </soap:Body>
+</soap:Envelope>

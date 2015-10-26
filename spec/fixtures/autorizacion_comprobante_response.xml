@@ -1,0 +1,203 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:autorizacionComprobanteResponse xmlns:ns2="http://ec.gob.sri.ws.autorizacion">
+      <RespuestaAutorizacionComprobante>
+        <claveAccesoConsultada>1510201501110367180400110010010000000142068714618</claveAccesoConsultada>
+        <numeroComprobantes>1</numeroComprobantes>
+        <autorizaciones>
+          <autorizacion>
+            <estado>AUTORIZADO</estado>
+            <numeroAutorizacion>1510201501110367180400110010010000000142068714618</numeroAutorizacion>
+            <fechaAutorizacion>2015-10-22T17:43:46.370-05:00</fechaAutorizacion>
+            <ambiente>PRUEBAS</ambiente>
+            <comprobante>
+              <![CDATA[<?xml version="1.0" standalone="no"?>
+              <factura id="comprobante" version="1.1.0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://0.0.0.0:9292/xsd/factura.xsd">
+                <infoTributaria>
+                  <ambiente>1</ambiente>
+                  <tipoEmision>1</tipoEmision>
+                  <razonSocial>Distribuidora de Suministros Nacional S.A</razonSocial>
+                  <nombreComercial>Empresa Importadora y Exportadora de Piezas y Partes de Equipos de Oficina</nombreComercial>
+                  <ruc>1792146739001</ruc>
+                  <claveAcceso>2410201107179214673900110020010000000011234567815</claveAcceso>
+                  <codDoc>01</codDoc>
+                  <estab>001</estab>
+                  <ptoEmi>001</ptoEmi>
+                  <secuencial>000000008</secuencial>
+                  <dirMatriz>Enrique Guerrero Portilla OE1-34 AV. GALO PLAZA LASSO</dirMatriz>
+                </infoTributaria>
+                <infoFactura>
+                  <fechaEmision>15/10/2015</fechaEmision>
+                  <dirEstablecimiento>Enrique Guerrero Portilla OE1-34 AV. GALO PLAZA LASSO</dirEstablecimiento>
+                  <contribuyenteEspecial>12345</contribuyenteEspecial>
+                  <obligadoContabilidad>SI</obligadoContabilidad>
+                  <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+                  <razonSocialComprador>Juan Pablo Chávez Nuñez</razonSocialComprador>
+                  <identificacionComprador>1713328506001</identificacionComprador>
+                  <totalSinImpuestos>16.99</totalSinImpuestos>
+                  <totalDescuento>0.0</totalDescuento>
+                  <totalConImpuestos>
+                    <totalImpuesto>
+                      <codigo>3</codigo>
+                      <codigoPorcentaje>3092</codigoPorcentaje>
+                      <baseImponible>15.99</baseImponible>
+                      <valor>2.4</valor>
+                    </totalImpuesto>
+                    <totalImpuesto>
+                      <codigo>2</codigo>
+                      <codigoPorcentaje>2</codigoPorcentaje>
+                      <baseImponible>19.39</baseImponible>
+                      <valor>2.33</valor>
+                    </totalImpuesto>
+                  </totalConImpuestos>
+                  <propina>0</propina>
+                  <importeTotal>21.72</importeTotal>
+                  <moneda>DOLAR</moneda>
+                </infoFactura>
+                <detalles>
+                  <detalle>
+                    <codigoPrincipal>1</codigoPrincipal>
+                    <codigoAuxiliar>1</codigoAuxiliar>
+                    <descripcion>Test Item 1</descripcion>
+                    <cantidad>1.0</cantidad>
+                    <precioUnitario>15.99</precioUnitario>
+                    <descuento>0.0</descuento>
+                    <precioTotalSinImpuesto>15.99</precioTotalSinImpuesto>
+                    <impuestos>
+                      <impuesto>
+                        <codigo>3</codigo>
+                        <codigoPorcentaje>3092</codigoPorcentaje>
+                        <tarifa>15.0</tarifa>
+                        <baseImponible>15.99</baseImponible>
+                        <valor>2.4</valor>
+                      </impuesto>
+                      <impuesto>
+                        <codigo>2</codigo>
+                        <codigoPorcentaje>2</codigoPorcentaje>
+                        <tarifa>12.0</tarifa>
+                        <baseImponible>18.39</baseImponible>
+                        <valor>2.21</valor>
+                      </impuesto>
+                    </impuestos>
+                  </detalle>
+                  <detalle>
+                    <codigoPrincipal>2</codigoPrincipal>
+                    <codigoAuxiliar>2</codigoAuxiliar>
+                    <descripcion>Test Item 2</descripcion>
+                    <cantidad>1.0</cantidad>
+                    <precioUnitario>1.0</precioUnitario>
+                    <descuento>0.0</descuento>
+                    <precioTotalSinImpuesto>1.0</precioTotalSinImpuesto>
+                    <impuestos>
+                      <impuesto>
+                        <codigo>2</codigo>
+                        <codigoPorcentaje>2</codigoPorcentaje>
+                        <tarifa>12.0</tarifa>
+                        <baseImponible>1.0</baseImponible>
+                        <valor>0.12</valor>
+                      </impuesto>
+                    </impuestos>
+                  </detalle>
+                </detalles>
+                <ds:Signature xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature779145">
+                <ds:SignedInfo Id="Signature-SignedInfo711186">
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                <ds:Reference Id="SignedPropertiesID13229" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature779145-SignedProperties1002124">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>hqRoYmfD13dgJ0NmksNDV3zb0bE=</ds:DigestValue>
+                </ds:Reference>
+                <ds:Reference URI="#Certificate1582358">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>gI6u+Wby1QM6BmLYPe9epLCMKeg=</ds:DigestValue>
+                </ds:Reference>
+                <ds:Reference Id="Reference-ID-184494" URI="#comprobante">
+                <ds:Transforms>
+                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>7gRGhm2lHT5O4JiUiYPd5V0AQEE=</ds:DigestValue>
+                </ds:Reference>
+                </ds:SignedInfo>
+                <ds:SignatureValue Id="SignatureValue644073">
+                KN7bmNvZOsyTGM4JUiPnXTDCcJkXHetYE8+UnpshYjcjYtWUVKczy3RgbFE2GuORRWqgcAjXVCot
+                fQcdbsOoFBoGuaBDXiMY8dulrlkWf7IWcwGRy2X5kNyECf0uZb3kej0eKABnentIQDf/OAFcaN1y
+                GMt/0xbGta8dJOD0lWbbEHb5Lw+G0b30FuicynkCDdKlVG30MVs7SWIbwTvP2hYx+NCdx26FKKvv
+                rBcuj4Jwre3rr71F2D4l9yhBQp75iBUAM0n3ZinL9fkzbF6qlzAmzmYe1pNEM/F/OwV7jDWIkd/4
+                7J7r31HM1NknxJoG+z/TAGpMzXtSjeEdj1N3qg==
+                </ds:SignatureValue>
+                <ds:KeyInfo Id="Certificate1582358">
+                <ds:X509Data>
+                <ds:X509Certificate>
+                MIIJATCCBumgAwIBAgIETkVY+DANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
+                BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
+                SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
+                QyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMB4XDTE1MTAxNTIxMDEwNFoXDTE3MTAxNTIxMzEw
+                NFowgbIxCzAJBgNVBAYTAkVDMSIwIAYDVQQKExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcw
+                NQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4w
+                DAYDVQQHEwVRVUlUTzE2MBEGA1UEBRMKMDAwMDEzNTQwMzAhBgNVBAMTGkpPU0UgQVVHVVNUTyBD
+                QVJSSU9OIEpVTUJPMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqClJ3QLxAcveQfSs
+                S0m0XaxIvBAEHreeuUb7sgpv5kmgP3jzcHMUoIJzWULC7cK+wLNj1MGW+K8eTH20kaJA8QR1pjLb
+                Kcde0tvCE/Xg1yHcqXQna1gb3L0IXjNrSRL0F0/GVAPGs+GZ3DZqopoDbs8d9Hx4/9LzLFNj7IA8
+                qEFcyNeNIHNMTbEENSGU4XvcEW14cNqi1zVqn0oWIs6f38HwqTYhoG+W9z2GjPwSPR1IvrG63I5D
+                /IMTl3sI2McNWLl4HemnPpah8JBpK4R+f2WUjuzEYnG7QqcfBbMI4UEKFvHYEUI6xigGC7Vj0tq/
+                VK74yXYNCowimriBRifmMwIDAQABo4IELDCCBCgwCwYDVR0PBAQDAgUgMIGRBggrBgEFBQcBAQSB
+                hDCBgTA+BggrBgEFBQcwAYYyaHR0cDovL29jc3AuZWNpLmJjZS5lYy9lamJjYS9wdWJsaWN3ZWIv
+                c3RhdHVzL29jc3AwPwYIKwYBBQUHMAGGM2h0dHA6Ly9vY3NwMS5lY2kuYmNlLmVjL2VqYmNhL3B1
+                YmxpY3dlYi9zdGF0dXMvb2NzcDAaBgorBgEEAYKoOwMBBAwTCjExMDM2NzE4MDQwHAYKKwYBBAGC
+                qDsDAgQOEwxKT1NFIEFVR1VTVE8wFwYKKwYBBAGCqDsDAwQJEwdDQVJSSU9OMBUGCisGAQQBgqg7
+                AwQEBxMFSlVNQk8wKQYKKwYBBAGCqDsDBwQbExlQQVJBR1VBWSAyNDM4IFkgTklDQVJBR1VBMBkG
+                CisGAQQBgqg7AwgECxMJMDcyNTcwMzU5MBQGCisGAQQBgqg7AwkEBhMETG9qYTAXBgorBgEEAYKo
+                OwMMBAkTB0VDVUFET1IwHQYKKwYBBAGCqDsDCwQPEw0xMTAzNjcxODA0MDAxMCAGCisGAQQBgqg7
+                AzMEEhMQU09GVFdBUkUtQVJDSElWTzAcBgNVHREEFTATgRFqb3NlbG9jQGdtYWlsLmNvbTCCAd8G
+                A1UdHwSCAdYwggHSMIIBzqCCAcqgggHGhoHVbGRhcDovL2JjZXFsZGFwc3VicDEuYmNlLmVjL2Nu
+                PUNSTDI2Nixjbj1BQyUyMEJBTkNPJTIwQ0VOVFJBTCUyMERFTCUyMEVDVUFET1IsbD1RVUlUTyxv
+                dT1FTlRJREFEJTIwREUlMjBDRVJUSUZJQ0FDSU9OJTIwREUlMjBJTkZPUk1BQ0lPTi1FQ0lCQ0Us
+                bz1CQU5DTyUyMENFTlRSQUwlMjBERUwlMjBFQ1VBRE9SLGM9RUM/Y2VydGlmaWNhdGVSZXZvY2F0
+                aW9uTGlzdD9iYXNlhjRodHRwOi8vd3d3LmVjaS5iY2UuZWMvQ1JML2VjaV9iY2VfZWNfY3JsZmls
+                ZWNvbWIuY3JspIG1MIGyMQswCQYDVQQGEwJFQzEiMCAGA1UEChMZQkFOQ08gQ0VOVFJBTCBERUwg
+                RUNVQURPUjE3MDUGA1UECxMuRU5USURBRCBERSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9O
+                LUVDSUJDRTEOMAwGA1UEBxwFUVVJVE8xJTAjBgNVBAMTHEFDIEJBTkNPIENFTlRSQUwgREVMIEVD
+                VUFET1IxDzANBgNVBAMTBkNSTDI2NjAfBgNVHSMEGDAWgBQY+fD75jIcmWY5KsqLsml9SSe/zjAd
+                BgNVHQ4EFgQUIA32DQoRBC20vxz0ErgsKLiiE3IwCQYDVR0TBAIwADAZBgkqhkiG9n0HQQAEDDAK
+                GwRWOC4xAwIEsDANBgkqhkiG9w0BAQsFAAOCAgEAcmILTHZkHfdst4lbi3Nb3AW+6hPsrhUdmMn3
+                5/IrqxiQvZCzJJSBJiitMQAKaTXCqki3dzQRhBY4pn4y7qUcsB3fftkCpuyP92/AwNwi9tc4Gjdd
+                1UBX/X8vAbe5XgWK9zcfCLrnTCdhmKq3e/1R4eLLQi0qEq/ctxylT2NBj2sSFNUPVLeQeyJRq1qp
+                fhm9RORW3g2mEQ4iLEvdkfKQny7tnPV5afMqfxqLzgP1pM9AfgJhLE+CGqPOG0dUAx1gRqqISSa+
+                IPiO0druFPYi6yHCrM5Fq1glFrQCXQz50fFbs/LsFV5bjWzN9IimXYqc8IDpPqlcNIJHqQH3f4vL
+                3AKo67U1J3rueLw8hOugnM4rWIXDXTztBgPQ4Zwz+ICnkx8IZqO45yaDrVLvtCAwQ8Gs8v9Qs/53
+                LaHZ2+wF65zAWkzFb46/KrkkR5PvxKYIQ66rSozw74r/6Q20RZTIsCveDZYY9pRVxHkeZbBoTClb
+                T4SvH0tOwY8b3G29kx4jsJvIaLTiMZ1Erf5LLO2T7TFgKVPeJy8YZ26iKmCESZYYPmL7dPpuYkeS
+                zUgwPpQJnktgWx/Aynky3FcMUB4knsyXu7CFDlwgUYHcxDCnuuKkU3uwnJvDxC1zJG08wmPfaNLz
+                aPgw3qm0qPYpOSaNjGX8Sb+nK1+wkWREGdubnxM=
+                </ds:X509Certificate>
+                </ds:X509Data>
+                <ds:KeyValue>
+                <ds:RSAKeyValue>
+                <ds:Modulus>
+                qClJ3QLxAcveQfSsS0m0XaxIvBAEHreeuUb7sgpv5kmgP3jzcHMUoIJzWULC7cK+wLNj1MGW+K8e
+                TH20kaJA8QR1pjLbKcde0tvCE/Xg1yHcqXQna1gb3L0IsjNrSRL0F0/GVAPGs+GZ3DZqopoDbs8d
+                9Hx4/9LzLFNj7IA8qEFcyNeNIHNMTbEENSGU4XvcEW14cNqi1zVqn0oWIs6f38HwqTYhoG+W9z2G
+                jPwSPR1IvrG63I5D/IMTl3sI2McNWLl4HemnPpah8JBpK4R+f2WUjuzEYnG7QqcfBbMI4UEKFvHY
+                EUI6xigGC7Vj0tq/VK74yXYNCowimriBRifmMw==
+                </ds:Modulus>
+                <ds:Exponent>AQAB</ds:Exponent>
+                </ds:RSAKeyValue>
+                </ds:KeyValue>
+                </ds:KeyInfo>
+                <ds:Object Id="Signature779145-Object978422"><etsi:QualifyingProperties Target="#Signature779145"><etsi:SignedProperties Id="Signature779145-SignedProperties1002124"><etsi:SignedSignatureProperties><etsi:SigningTime>2015-10-22T17:14:16-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>29lBfzkYrcnMpottUQcHerdNoz4=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1313167608</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-184494"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature>
+              </factura>]]>
+            </comprobante>
+            <mensajes>
+              <mensaje>
+                <identificador>60</identificador>
+                <mensaje>ESTE PROCESO FUE REALIZADO EN EL AMBIENTE DE PRUEBAS</mensaje>
+                <tipo>INFORMATIVO</tipo>
+              </mensaje>
+            </mensajes>
+          </autorizacion>
+        </autorizaciones>
+      </RespuestaAutorizacionComprobante>
+    </ns2:autorizacionComprobanteResponse>
+  </soap:Body>
+</soap:Envelope>
