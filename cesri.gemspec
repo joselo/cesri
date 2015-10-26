@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["joseloc@gmail.com"]
 
   spec.summary       = %q{Gema Ruby que permite consumir los servicios web expuestos por el SRI para comprobantes electronicos en Ecuador.}
-  spec.description   = %q{Gema Ruby que permite consumir los servicios web expuestos por el SRI para comprobantes electronicos en Ecuador.}
+  spec.description   = %q{Cesri es una Gema Ruby que permite consumir los servicios Web de Comprobantes Electrónicos del Servicio de Rentas Internas, para fines de la facturación electrónica en Ecuador. Esta versión soporta únicamente la nueva modalidad "OFFLINE" del SRI.}
   spec.homepage      = "https://github.com/joselo/cesri"
   spec.license       = "MIT"
 
@@ -20,10 +20,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "savon", "~> 2.3.0"
+  spec.add_dependency "savon", '~> 2.3', '>= 2.3.0'
 
-  spec.add_development_dependency "bundler", "~> 1.10.6"
-  spec.add_development_dependency "rake", "~> 0"
-  spec.add_development_dependency "rspec", "~> 3.3"
+  spec.add_development_dependency 'bundler', '~> 1.10', '>= 1.10.6'
+  spec.add_development_dependency 'rake', '~> 0'
+  spec.add_development_dependency 'rspec', '~> 3.3'
 
 end
